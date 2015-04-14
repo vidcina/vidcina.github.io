@@ -9,9 +9,10 @@ pages_list:
   Feed: '/atom.xml'
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            vidcina
+tagline:          my swift blog
 url:              http://getpoole.com
+comments:         True
 paginate:         1
 baseurl:          /
 author:

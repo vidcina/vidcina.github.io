@@ -4,7 +4,7 @@ title: SOLID, Single responsibility principle
 ---
 
 <div class="message">
-  就一個類別而言, 應該只有一個引起它變化的原因 - 大話設計模式
+  "就一個類別而言, 應該只有一個引起它變化的原因" - 大話設計模式
 </div>
 
 [SOLID](http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29)

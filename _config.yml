@@ -9,7 +9,7 @@ pages_list:
   Feed: '/atom.xml'
 
 # Setup
-title:            swift中文部落格
+title:            vidcina
 tagline:          swift blog
 url:              http://vidcina.github.io
 comments:         True

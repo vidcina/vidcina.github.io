@@ -7,7 +7,7 @@ title: About
   今年開始成為正職iOS developer，目前正在往swift, design pattern, reactive programming前進
 </p>
 
-我目前是一個菜鳥ios Developer, 目前剛開始接觸swift, 希望能用這個地方記錄我在學習過程中得到的經驗, 
+我目前是一個菜鳥iOS Developer, 目前剛開始接觸swift, 希望能用這個地方記錄我在學習過程中得到的經驗, 
 分享給廣大的中文社群, 也希望能跟更多人接觸不斷修正我的想法, 成為一個有貢獻的programmer.
 
 我研究所主要做的是parallel programming與supercomputing, 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Design Pattern] - SOLID princinples
+title: Design Pattern - SOLID princinples
 ---
 
 <div class="message">

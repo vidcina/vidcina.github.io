@@ -56,11 +56,15 @@ Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleRep
 如果你認真想遵守SRP, 會發現現實面上沒有想像中的那麼簡單, 你會需要更好的pattern, 更棒的interface,
 那有沒有什麼時候可以偷偷地不遵守呢?
 
-> If the application changes in ways that affect the signature of the connection functions, then the design will smell of Rigidity... In that case the two responsibilities should be separated. If, on the other hand, the application is not changing in ways that cause the two responsibilities to change at different times, then there is no need to separate them. 如果application沒有辦法用某種方式, 使得兩種責任分別在不同的時間發生改變, 也就是說兩種責任一定一起改變, 那我們不分開他們也沒關係.
+> If the application changes in ways that affect the signature of the connection functions, then the design will smell of Rigidity... In that case the two responsibilities should be separated. If, on the other hand, the application is not changing in ways that cause the two responsibilities to change at different times, then there is no need to separate them.
+
+> 如果application沒有辦法用某種方式, 使得兩種責任分別在不同的時間發生改變, 也就是說兩種責任一定一起改變, 那我們不分開他們也沒關係.
 
 最後還是列出Martin對SRP的另一種解釋:
 
-> Gather together the things that change for the same reasons. Separate those things that change for different reasons.把因為相同原因而發生改變的事情包起來, 分開那些因為不同原因而改變的事情
+> Gather together the things that change for the same reasons. Separate those things that change for different reasons.
+
+> 把因為相同原因而發生改變的事情包起來, 分開那些因為不同原因而改變的事情
 
 
 

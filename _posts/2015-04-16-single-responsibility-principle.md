@@ -42,8 +42,8 @@ class GPSTracker {
 
 注意到了嗎? 這個 GPSTracker 因為兩個不同的`責任`而需要改變, 這樣就不遵守 SRP 了.
 GPSTracker 本來的用意就是記錄 GPS 的結果, 要如何把這些記錄存成路跑記錄應該要由別人負責, 
-他本身不能也不該知道 Activity 的細節. 這樣就不是一個好的設計, 我們應該要把 saveAsActivity 拿掉, 
-讓所有個功能都緊緊的與他該做的事情貼齊.
+他本身不能也不該知道 Activity 的細節. 這樣就不是一個好的設計, 我們應該要把 saveAsActivity() 拿掉, 
+讓所有的功能都緊緊的與他該做的事情貼齊.
 
 Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)也點出了single responsibility principle 的精髓
 

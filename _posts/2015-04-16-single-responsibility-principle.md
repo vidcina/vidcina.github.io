@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Pattern - SOLID princinples
+title: Design Pattern, SOLID princinples
 ---
 
 <div class="message">
@@ -43,6 +43,7 @@ GPSTracker本來的用意就是記錄GPS的結果, 要如何把這些記錄存�
 讓所有個功能都緊緊的與他該做的事情貼齊.
 
 Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)也點出了single responsibility principle的精髓
+
 > This principle is about people.
 
 當我們今天寫了一個module, 我們會希望只會有一個人, 或是一群人代表某個商業邏輯, 來發出修改.
@@ -58,6 +59,7 @@ Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleRep
 > If the application changes in ways that affect the signature of the connection functions, then the design will smell of Rigidity... In that case the two responsibilities should be separated. If, on the other hand, the application is not changing in ways that cause the two responsibilities to change at different times, then there is no need to separate them. 如果application沒有辦法用某種方式, 使得兩種責任分別在不同的時間發生改變, 也就是說兩種責任一定一起改變, 那我們不分開他們也沒關係.
 
 最後還是列出Martin對SRP的另一種解釋:
+
 > Gather together the things that change for the same reasons. Separate those things that change for different reasons.把因為相同原因而發生改變的事情包起來, 分開那些因為不同原因而改變的事情
 
 

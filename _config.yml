@@ -9,18 +9,18 @@ pages_list:
   Feed: '/atom.xml'
 
 # Setup
-title:            vidcina
-tagline:          my swift blog
-url:              http://getpoole.com
+title:            swift中文部落格
+tagline:          swift blog
+url:              http://vidcina.github.io
 comments:         True
 paginate:         1
 baseurl:          /
 author:
-  name:           Mark Otto
+  name:           vidcina
   url:            https://twitter.com/mdo
   email:          markdotto@gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/vidcina/vidcina.github.io

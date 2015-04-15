@@ -15,7 +15,8 @@ Liskov substitution principle, Interface segregation principle, Dependency inver
 
 ### 定義
 
-> 單一功能原則規定每一個Class都應該只負責軟體架構裡其中一個功能, 而這責任也應該完全屬於這個Class. 在這Class裡面, 所有功能都應該緊緊的貼齊這Class的責任, 也就是說沒有多餘,不相關的功能在裡面.
+> 單一功能原則規定每一個 Class 都應該只負責軟體架構裡其中一個功能, 而這責任也應該完全屬於這個 Class. 
+在這 Class 裡面, 所有功能都應該緊緊的貼齊這 Class 的責任, 也就是說沒有多餘,不相關的功能在裡面.
 
 這個原則是由[Robert C. Martin](http://en.wikipedia.org/wiki/Robert_Cecil_Martin)在他的書中提出. 
 Martin 定義每個 software 裡面的 module 必須有一個, 而且是唯一的一個理由去改變(one reason to change). 
@@ -39,17 +40,17 @@ class GPSTracker {
 這樣的設計看似非常美好, 但是今天如果路跑記錄的 format 有改變, 這個 Class 也是就必須做調整,
 同時我們又想增強 GPS 的功能, 支援暫停(stop)跟繼續(resume)的功能, 我們也得去調整 Class.
 
-注意到了嗎? 這個 GPSTracker 因為兩個不同的`責任`而需要改變, 這樣就不遵守SRP了.
-GPSTracker本來的用意就是記錄GPS的結果, 要如何把這些記錄存成路跑記錄應該要由別人負責, 
-他本身不能也不該知道Activity的細節. 這樣就不是一個好的設計, 我們應該要把 saveAsActivity 拿掉, 
+注意到了嗎? 這個 GPSTracker 因為兩個不同的`責任`而需要改變, 這樣就不遵守 SRP 了.
+GPSTracker 本來的用意就是記錄 GPS 的結果, 要如何把這些記錄存成路跑記錄應該要由別人負責, 
+他本身不能也不該知道 Activity 的細節. 這樣就不是一個好的設計, 我們應該要把 saveAsActivity 拿掉, 
 讓所有個功能都緊緊的與他該做的事情貼齊.
 
-Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)也點出了single responsibility principle的精髓
+Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)也點出了single responsibility principle 的精髓
 
 > This principle is about people.
 
-當我們今天寫了一個module, 我們會希望只會有一個人, 或是一群人代表某個商業邏輯, 來發出修改.
-我們非常努力的把這個module在複雜的架構下獨立出來, 只對這一個人, 或一個邏輯負責.
+當我們今天寫了一個 module, 我們會希望只會有一個人, 或是一群人代表某個商業邏輯, 來發出修改.
+我們非常努力的把這個 module 在複雜的架構下獨立出來, 只對這一個人, 或一個邏輯負責.
 
 假設你今天興高采烈的寫了一個相機修圖app, 但是iphone有硬體上的bug無法使用. 
 結果下一代iphone出來修正了bug, 但是不能修照片了, 你應該會覺得apple把你當白痴耍.
@@ -57,14 +58,14 @@ Martin 在[一篇文章](http://blog.8thlight.com/uncle-bob/2014/05/08/SingleRep
 
 ### 何時可以不遵守
 
-如果你認真想遵守SRP, 會發現現實面上沒有想像中的那麼簡單, 你會需要更好的pattern, 更棒的interface,
+如果你認真想遵守 SRP, 會發現現實面上沒有想像中的那麼簡單, 你會需要更好的 pattern, 更棒的 interface,
 那有沒有什麼時候可以偷偷地不遵守呢?
 
 > If the application changes in ways that affect the signature of the connection functions, then the design will smell of Rigidity... In that case the two responsibilities should be separated. If, on the other hand, the application is not changing in ways that cause the two responsibilities to change at different times, then there is no need to separate them.
 
-> 如果application沒有辦法用某種方式, 使得兩種責任分別在不同的時間發生改變, 也就是說兩種責任一定一起改變, 那我們不分開他們也沒關係.
+> 如果 application 沒有辦法用某種方式, 使得兩種責任分別在不同的時間發生改變, 也就是說兩種責任一定一起改變, 那我們不分開他們也沒關係.
 
-最後還是列出Martin對SRP的另一種解釋:
+最後列出 Martin 對 SRP 的另一種解釋:
 
 > Gather together the things that change for the same reasons. Separate those things that change for different reasons.
 
@@ -74,7 +75,7 @@ Single responsibility principle 幫助我在開發的時候更專注在件事情
 
 ### 參考
 
-[Teddy's blog](http://teddy-chen-tw.blogspot.tw/2011/12/3.html)
-[gitbooks](http://nlhsueh.gitbooks.io/oose/content/manuscript/ch4OOPrinciple.html)
-[clean code](http://www.books.com.tw/products/0010579897)
+* [Teddy's blog](http://teddy-chen-tw.blogspot.tw/2011/12/3.html)
+* [gitbooks](http://nlhsueh.gitbooks.io/oose/content/manuscript/ch4OOPrinciple.html)
+* [clean code](http://www.books.com.tw/products/0010579897)
 
